@@ -1,0 +1,6 @@
+framework module Pods_VortexTap {
+  umbrella header "Pods-VortexTap-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -6,13 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3A3F915A2EAA48B2004A3C43 /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 3A3F91592EAA48B2004A3C43 /* codemagic.yaml */; };
+		65B143F4B91AD6372DAA7CD5 /* Pods_VortexTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD27C6E21422603859ABC42A /* Pods_VortexTap.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		3A3F91592EAA48B2004A3C43 /* codemagic.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
 		3AC91B6A2E9D8E33004EDBDC /* VortexTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VortexTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73369945F986142771515F4A /* Pods-VortexTap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VortexTap.release.xcconfig"; path = "Target Support Files/Pods-VortexTap/Pods-VortexTap.release.xcconfig"; sourceTree = "<group>"; };
+		CD27C6E21422603859ABC42A /* Pods_VortexTap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VortexTap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52E2E15E930F47D9EE3C375 /* Pods-VortexTap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VortexTap.debug.xcconfig"; path = "Target Support Files/Pods-VortexTap/Pods-VortexTap.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3AC91B6C2E9D8E33004EDBDC /* VortexTap */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = VortexTap;
 			sourceTree = "<group>";
 		};
@@ -23,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B143F4B91AD6372DAA7CD5 /* Pods_VortexTap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,8 +44,11 @@
 		3AC91B612E9D8E33004EDBDC = {
 			isa = PBXGroup;
 			children = (
+				3A3F91592EAA48B2004A3C43 /* codemagic.yaml */,
 				3AC91B6C2E9D8E33004EDBDC /* VortexTap */,
 				3AC91B6B2E9D8E33004EDBDC /* Products */,
+				71EF104AE70041F5C5C70E17 /* Pods */,
+				6CD8152A083FEE691D5091C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +60,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		6CD8152A083FEE691D5091C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD27C6E21422603859ABC42A /* Pods_VortexTap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		71EF104AE70041F5C5C70E17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D52E2E15E930F47D9EE3C375 /* Pods-VortexTap.debug.xcconfig */,
+				73369945F986142771515F4A /* Pods-VortexTap.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -52,6 +85,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AC91B7D2E9D8E35004EDBDC /* Build configuration list for PBXNativeTarget "VortexTap" */;
 			buildPhases = (
+				BB277A14A847B77E6A774115 /* [CP] Check Pods Manifest.lock */,
 				3AC91B662E9D8E33004EDBDC /* Sources */,
 				3AC91B672E9D8E33004EDBDC /* Frameworks */,
 				3AC91B682E9D8E33004EDBDC /* Resources */,
@@ -64,8 +98,6 @@
 				3AC91B6C2E9D8E33004EDBDC /* VortexTap */,
 			);
 			name = VortexTap;
-			packageProductDependencies = (
-			);
 			productName = VortexTap;
 			productReference = 3AC91B6A2E9D8E33004EDBDC /* VortexTap.app */;
 			productType = "com.apple.product-type.application";
@@ -109,10 +141,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3F915A2EAA48B2004A3C43 /* codemagic.yaml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB277A14A847B77E6A774115 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VortexTap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3AC91B662E9D8E33004EDBDC /* Sources */ = {
@@ -246,12 +304,14 @@
 		};
 		3AC91B7E2E9D8E35004EDBDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D52E2E15E930F47D9EE3C375 /* Pods-VortexTap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VortexTap/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = VortexTap;
@@ -269,6 +329,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.VortexTap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -281,12 +342,14 @@
 		};
 		3AC91B7F2E9D8E35004EDBDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73369945F986142771515F4A /* Pods-VortexTap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VortexTap/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = VortexTap;
@@ -304,6 +367,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.VortexTap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
