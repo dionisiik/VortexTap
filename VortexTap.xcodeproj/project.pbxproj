@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A3F915A2EAA48B2004A3C43 /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 3A3F91592EAA48B2004A3C43 /* codemagic.yaml */; };
 		65B143F4B91AD6372DAA7CD5 /* Pods_VortexTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD27C6E21422603859ABC42A /* Pods_VortexTap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A3F91592EAA48B2004A3C43 /* codemagic.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
 		3AC91B6A2E9D8E33004EDBDC /* VortexTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VortexTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73369945F986142771515F4A /* Pods-VortexTap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VortexTap.release.xcconfig"; path = "Target Support Files/Pods-VortexTap/Pods-VortexTap.release.xcconfig"; sourceTree = "<group>"; };
 		CD27C6E21422603859ABC42A /* Pods_VortexTap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VortexTap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,7 +40,6 @@
 		3AC91B612E9D8E33004EDBDC = {
 			isa = PBXGroup;
 			children = (
-				3A3F91592EAA48B2004A3C43 /* codemagic.yaml */,
 				3AC91B6C2E9D8E33004EDBDC /* VortexTap */,
 				3AC91B6B2E9D8E33004EDBDC /* Products */,
 				71EF104AE70041F5C5C70E17 /* Pods */,
@@ -138,7 +135,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A3F915A2EAA48B2004A3C43 /* codemagic.yaml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
